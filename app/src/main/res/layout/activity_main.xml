@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/container_"
+        android:layout_width="200dp"
+        android:layout_height="450dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/little_radius"
+        android:contentDescription="container"
+        />
+        <ImageButton
+            android:id="@+id/red"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@android:drawable/presence_invisible"
+            tools:layout_editor_absoluteX="164dp"
+            tools:layout_editor_absoluteY="124dp"
+            android:background="@drawable/radius_circle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            app:tint="@color/red"
+            android:contentDescription="stop"/>
+
+        <ImageButton
+            android:id="@+id/yellow"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@android:drawable/presence_invisible"
+            tools:layout_editor_absoluteX="164dp"
+            tools:layout_editor_absoluteY="242dp"
+            android:background="@drawable/radius_circle"
+            android:layout_below="@+id/red"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            app:tint="@color/yellow"
+            android:contentDescription="ready"/>
+
+        <ImageButton
+            android:id="@+id/green"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/radius_circle"
+            app:srcCompat="@android:drawable/presence_invisible"
+            tools:layout_editor_absoluteX="164dp"
+            tools:layout_editor_absoluteY="362dp"
+            android:layout_below="@+id/yellow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            app:tint="@color/green"
+            android:contentDescription="go"/>
+    <Button
+        android:id="@+id/trigger_button"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="Start"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/container_">
+
+    </Button>
+
+
+
+</RelativeLayout>
